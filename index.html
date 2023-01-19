@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 220px;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            margin: auto;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<h1 class="width"></h1>
+<h1 class="height"></h1>
+<body>
+    <script>
+
+        const w = document.querySelector('.width')
+        const h = document.querySelector('.height')
+
+        let y = window.innerWidth
+        let x = window.innerHeight
+
+        w.textContent = `Width: ${y}`
+        h.textContent = `Height : ${x}`
+
+    </script>
+</body>
+</html>
